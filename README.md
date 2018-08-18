@@ -37,6 +37,7 @@ sudo apt-get update
 2. Upgrade:
 ```
 sudo apt-get upgrade
+sudo apt-get dist-upgrade
 ```
 
 ### 3. Setup user `grader`
@@ -162,7 +163,8 @@ GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;
 ```
 \q
 ```
-8. Clone the application and move into `/var/www/Catalog/Catalog`, note that it is not called `Stuffed-animals-catalog`
+8. Clone the application and move into `/var/www/Catalog/Catalog`,
+note that it is not called `Stuffed-animals-catalog`
 ```
 git clone https://github.com/candy02058912/Stuffed-animals-catalog.git
 ```
@@ -210,7 +212,7 @@ sudo a2enmod wsgi
 ```
 5. Enable site
 ```
-sudo a2ensite FlaskApp
+sudo a2ensite Catalog
 ```
 6. Install unzip for unzipping `client_secrets.zip`
 ```
